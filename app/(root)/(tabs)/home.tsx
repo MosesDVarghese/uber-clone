@@ -43,18 +43,15 @@ const Home = () => {
   useEffect(() => {
     (async () => {
       // let { status } = await Location.requestForegroundPermissionsAsync();
-      if (status !== "granted") {
-        setHasPermission(false);
-        return;
-      }
-
+      // if (status !== "granted") {
+      //   setHasPermission(false);
+      //   return;
+      // }
       // let location = await Location.getCurrentPositionAsync({});
-
       // const address = await Location.reverseGeocodeAsync({
       //   latitude: location.coords?.latitude!,
       //   longitude: location.coords?.longitude!,
       // });
-
       // setUserLocation({
       //   latitude: location.coords?.latitude,
       //   longitude: location.coords?.longitude,
