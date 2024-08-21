@@ -74,7 +74,6 @@ const SignUp = () => {
     } catch (err: any) {
       // See https://clerk.com/docs/custom-flows/error-handling
       // for more info on error handling
-      console.log(err.errors[0].longMessage);
       setVerification({
         ...verification,
         error: err.errors[0].longMessage,
@@ -97,7 +96,7 @@ const SignUp = () => {
             placeholder="Enter name"
             icon={icons.person}
             value={form.name}
-            onChangeText={(value: any) => setForm({ ...form, name: value })}
+            onChangeText={(value) => setForm({ ...form, name: value })}
           />
           <InputField
             label="Email"
@@ -105,7 +104,7 @@ const SignUp = () => {
             icon={icons.email}
             textContentType="emailAddress"
             value={form.email}
-            onChangeText={(value: any) => setForm({ ...form, email: value })}
+            onChangeText={(value) => setForm({ ...form, email: value })}
           />
           <InputField
             label="Password"
@@ -114,7 +113,7 @@ const SignUp = () => {
             secureTextEntry={true}
             textContentType="password"
             value={form.password}
-            onChangeText={(value: any) => setForm({ ...form, password: value })}
+            onChangeText={(value) => setForm({ ...form, password: value })}
           />
           <CustomButton
             title="Sign Up"
@@ -132,9 +131,9 @@ const SignUp = () => {
         </View>
         <ReactNativeModal
           isVisible={verification.state === "pending"}
-          onBackdropPress={() =>
-            setVerification({ ...verification, state: "default" })
-          }
+          // onBackdropPress={() =>
+          //   setVerification({ ...verification, state: "default" })
+          // }
           onModalHide={() => {
             if (verification.state === "success") {
               setShowSuccessModal(true);
@@ -184,7 +183,10 @@ const SignUp = () => {
             </Text>
             <CustomButton
               title="Browse Home"
-              onPress={() => router.push(`/(root)/(tabs)/home`)}
+              onPress={() => {
+                router.push("/(root)/(tabs)/home");
+                setShowSuccessModal(false);
+              }}
               className="mt-5"
             />
           </View>
@@ -193,4 +195,5 @@ const SignUp = () => {
     </ScrollView>
   );
 };
+
 export default SignUp;

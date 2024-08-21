@@ -47,11 +47,14 @@ const Home = () => {
         setHasPermission(false);
         return;
       }
+
       let location = await Location.getCurrentPositionAsync({});
+
       const address = await Location.reverseGeocodeAsync({
         latitude: location.coords?.latitude!,
         longitude: location.coords?.longitude!,
       });
+
       setUserLocation({
         latitude: location.coords?.latitude,
         longitude: location.coords?.longitude,
@@ -66,17 +69,14 @@ const Home = () => {
     address: string;
   }) => {
     setDestinationLocation(location);
-    // router.push("/(root)/find-ride");
+    router.push("/(root)/find-ride");
   };
 
   return (
     <SafeAreaView className="bg-general-500">
       <FlatList
         data={recentRides?.slice(0, 5)}
-        renderItem={({ item }) => (
-          // <RideCard ride={item} />
-          <View></View>
-        )}
+        renderItem={({ item }) => <RideCard ride={item} />}
         keyExtractor={(item, index) => index.toString()}
         className="px-5"
         keyboardShouldPersistTaps="handled"
