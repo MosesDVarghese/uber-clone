@@ -21,6 +21,8 @@ import { useFetch } from "@/lib/fetch";
 import { useLocationStore } from "@/store";
 import { Ride } from "@/types/type";
 
+import { rides } from "@/constants";
+
 const Home = () => {
   const { user } = useUser();
   const { signOut } = useAuth();
@@ -104,7 +106,8 @@ const Home = () => {
           <>
             <View className="flex flex-row items-center justify-between my-5">
               <Text className="text-2xl font-JakartaExtraBold">
-                Welcome {user?.firstName}👋
+                Welcome{""}
+                {user?.firstName} 👋
               </Text>
               <TouchableOpacity
                 onPress={handleSignOut}
