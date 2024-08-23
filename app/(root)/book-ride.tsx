@@ -37,7 +37,7 @@ const BookRide = () => {
 
             <View className="flex flex-row items-center justify-center mt-5 space-x-2">
               <Text className="text-lg font-JakartaSemiBold">
-                {driverDetails?.title}
+                {driverDetails?.first_name} {driverDetails?.last_name}
               </Text>
 
               <View className="flex flex-row items-center space-x-0.5">
@@ -80,14 +80,14 @@ const BookRide = () => {
             <View className="flex flex-row items-center justify-start mt-3 border-t border-b border-general-700 w-full py-3">
               <Image source={icons.to} className="w-6 h-6" />
               <Text className="text-lg font-JakartaRegular ml-2">
-                {userAddress}
+                {userAddress == "" || "Dubai Mall, Dubai"}
               </Text>
             </View>
 
             <View className="flex flex-row items-center justify-start border-b border-general-700 w-full py-3">
               <Image source={icons.point} className="w-6 h-6" />
               <Text className="text-lg font-JakartaRegular ml-2">
-                {destinationAddress}
+                {destinationAddress || "Burj Khalifa, Dubai"}
               </Text>
             </View>
           </View>
