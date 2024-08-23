@@ -1,3 +1,31 @@
+# Social Media App with Expo Go and Supabase
+
+Desc
+
+Tools Used: React Native, Expo Go, Clerk, Neon, Stripe, Geoapify, TailWindCSS
+
+## Demo Images
+
+### Onboarding Screens
+
+<img src="assets/screenshots/onboarding1.PNG" width="200" /> <img src="assets/screenshots/onboarding2.PNG" width="200" /> <img src="assets/screenshots/onboarding3.PNG" width="200" />
+
+### Sign up / Sign in Screens / Google Login
+
+<img src="assets/screenshots/signup.PNG" width="200" /> <img src="assets/screenshots/signin.PNG" width="200" /> <img src="assets/screenshots/googlelogin.PNG" width="200" />
+
+### Main Tab Layout
+
+<img src="assets/screenshots/home.PNG" width="200" /> <img src="assets/screenshots/rides.PNG" width="200" /> <img src="assets/screenshots/chat.PNG" width="200" /> <img src="assets/screenshots/profile.PNG" width="200" />
+
+<!-- ### Profile | Edit Profile Screens
+
+<img src="assets/screenshots/profile.PNG" width="200" /> <img src="assets/screenshots/editprofile.PNG" width="200" />
+
+### Create Post Screen
+
+<img src="assets/screenshots/createpost1.PNG" width="200" /> <img src="assets/screenshots/createpost2.PNG" width="200" /> <img src="assets/screenshots/createpost3.PNG" width="200" /> -->
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
