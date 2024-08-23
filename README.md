@@ -1,6 +1,6 @@
 # Social Media App with Expo Go and Supabase
 
-Desc
+Yuber is a ride-booking application that provides a seamless and secure user experience. The app features full user authentication and sign-in with Google, powered by Clerk, ensuring a streamlined registration and login process. User data is securely stored on Neon, a serverless Postgres platform. Yuber's main screens include a ride history view, a user profile section, and a booking interface. To book a ride, users select their start location—defaulting to their current location—and choose a destination. Yuber then suggests nearby drivers, providing detailed information such as pricing, distance, fees, and available car seats. Payment for rides is conveniently handled through Stripe, allowing users to enter their payment details and confirm their ride with ease. Once payment is complete, users are ready to embark on their journey.
 
 Tools Used: React Native, Expo Go, Clerk, Neon, Stripe, Geoapify, TailWindCSS
 
@@ -18,13 +18,25 @@ Tools Used: React Native, Expo Go, Clerk, Neon, Stripe, Geoapify, TailWindCSS
 
 <img src="assets/screenshots/home.PNG" width="200" /> <img src="assets/screenshots/rides.PNG" width="200" /> <img src="assets/screenshots/chat.PNG" width="200" /> <img src="assets/screenshots/profile.PNG" width="200" />
 
-<!-- ### Profile | Edit Profile Screens
+### Choose Ride Screen
 
-<img src="assets/screenshots/profile.PNG" width="200" /> <img src="assets/screenshots/editprofile.PNG" width="200" />
+<img src="assets/screenshots/choose_ride1.PNG" width="200" /> <img src="assets/screenshots/choose_ride2.PNG" width="200" />
 
-### Create Post Screen
+### Choose Driver Screen
 
-<img src="assets/screenshots/createpost1.PNG" width="200" /> <img src="assets/screenshots/createpost2.PNG" width="200" /> <img src="assets/screenshots/createpost3.PNG" width="200" /> -->
+<img src="assets/screenshots/choose_driver1.PNG" width="200" /> <img src="assets/screenshots/choose_driver2.PNG" width="200" />
+
+### Confirm Screen
+
+<img src="assets/screenshots/confirm.PNG" width="200" />
+
+### Stripe Pay Modal Screen
+
+<img src="assets/screenshots/pay1.PNG" width="200" /> <img src="assets/screenshots/pay2.PNG" width="200" /> <img src="assets/screenshots/pay3.PNG" width="200" />
+
+### Complete Screen
+
+<img src="assets/screenshots/complete.PNG" width="200" />
 
 # Welcome to your Expo app 👋
 
